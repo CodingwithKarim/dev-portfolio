@@ -1,0 +1,34 @@
+{
+  "files": {
+    "main.css": "/dev-portfolio/static/css/main.10e000da.css",
+    "main.js": "/dev-portfolio/static/js/main.e7e62342.js",
+    "static/css/64.bba8fa55.chunk.css": "/dev-portfolio/static/css/64.bba8fa55.chunk.css",
+    "static/js/64.41912c0a.chunk.js": "/dev-portfolio/static/js/64.41912c0a.chunk.js",
+    "static/css/331.43daf83e.chunk.css": "/dev-portfolio/static/css/331.43daf83e.chunk.css",
+    "static/js/331.653f8323.chunk.js": "/dev-portfolio/static/js/331.653f8323.chunk.js",
+    "static/media/hson-server.png": "/dev-portfolio/static/media/hson-server.256d12ff80ee8f72613b.png",
+    "static/media/stanfordLogo.png": "/dev-portfolio/static/media/stanfordLogo.5a8e3a0a00949c93a9b8.png",
+    "static/media/harvardLogo.png": "/dev-portfolio/static/media/harvardLogo.542dab89bfb35b7f5c0d.png",
+    "static/media/Montserrat-Regular.ttf": "/dev-portfolio/static/media/Montserrat-Regular.3cd786652b8a2e9d41f2.ttf",
+    "static/media/Agustina.woff": "/dev-portfolio/static/media/Agustina.eb0c59dda4cc308cba96.woff",
+    "static/media/manOnTable.svg": "/dev-portfolio/static/media/manOnTable.8f117eb207e57ed8f89d67d595aceb45.svg",
+    "static/media/contactMailDark.svg": "/dev-portfolio/static/media/contactMailDark.1db650d351729a0f17b4e3104e6a7b7a.svg",
+    "static/media/developerActivity.svg": "/dev-portfolio/static/media/developerActivity.2c0445cae86f4243433a2f5a22b2c031.svg",
+    "static/media/googleAssistantLogo.webp": "/dev-portfolio/static/media/googleAssistantLogo.f720c71652579588524a.webp",
+    "static/media/codeInLogo.webp": "/dev-portfolio/static/media/codeInLogo.e41a71d512efeda2a55c.webp",
+    "static/media/skill.svg": "/dev-portfolio/static/media/skill.35a147662ab0a1d15e579690446e0258.svg",
+    "static/media/pwaLogo.webp": "/dev-portfolio/static/media/pwaLogo.8bf2293da0ca66249e37.webp",
+    "index.html": "/dev-portfolio/index.html",
+    "static/media/talksCardBack.svg": "/dev-portfolio/static/media/talksCardBack.73ed1545d58273ba64b0.svg",
+    "main.10e000da.css.map": "/dev-portfolio/static/css/main.10e000da.css.map",
+    "main.e7e62342.js.map": "/dev-portfolio/static/js/main.e7e62342.js.map",
+    "64.bba8fa55.chunk.css.map": "/dev-portfolio/static/css/64.bba8fa55.chunk.css.map",
+    "64.41912c0a.chunk.js.map": "/dev-portfolio/static/js/64.41912c0a.chunk.js.map",
+    "331.43daf83e.chunk.css.map": "/dev-portfolio/static/css/331.43daf83e.chunk.css.map",
+    "331.653f8323.chunk.js.map": "/dev-portfolio/static/js/331.653f8323.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.10e000da.css",
+    "static/js/main.e7e62342.js"
+  ]
+}
