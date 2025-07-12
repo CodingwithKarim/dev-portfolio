@@ -1,0 +1,137 @@
+@import "../../_globalColor";
+
+// ——— Theme Variables ———
+:root {
+  --text-main: #222;
+  --text-sub: $subTitle;
+  // --bg-section: #fff;
+  --bg-card: #1e1e2f;
+}
+
+[data-theme="dark"] {
+  --text-main: #fff;
+  // --bg-section: #0f0f1e;
+  --bg-card: #1e1e2f;
+}
+
+[data-theme="light"] {
+  // --bg-section: #fff;
+  --text-main: $darkBackground;
+}
+
+.skills-section {
+  background: var(--bg-section);
+  color: var(--text-main);
+  padding: 2rem;
+
+  .skills-main {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+  }
+
+  .skills-visual {
+    flex: 1 1 300px;
+    max-width: 400px;
+
+    img,
+    svg,
+    .lottie-container {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+  }
+
+  .skills-content {
+    flex: 2 1 400px;
+  }
+
+  .skills-heading {
+    font-size: 3rem;
+    margin-bottom: 3rem;
+  }
+
+  .skills-subtitle {
+    font-size: 1.1rem;
+    color: var(--text-sub);
+    margin-bottom: 1.5rem;
+  }
+
+  // —— Icon Grid —— 
+  .skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+
+    .skill-group {
+      text-align: center;
+
+      .group-title {
+        font-size: 1rem;
+        font-weight: 600;
+        margin-bottom: 0.75rem;
+      }
+
+      .group-icons {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 0.75rem;
+
+        .skill-icon {
+          font-size: 2rem;
+          opacity: 0.7;
+          transition: transform 0.2s, opacity 0.2s;
+
+          &:hover {
+            opacity: 1;
+            transform: scale(1.2);
+          }
+        }
+      }
+    }
+  }
+
+  // —— Bullet List —— 
+  .skills-list {
+    list-style-type: disc;
+    padding-left: 1.5rem;
+
+    .skills-text {
+      margin: 0.5rem 0;
+      line-height: 1.6;
+    }
+  }
+}
+
+// —— Responsive tweaks —— 
+@media (max-width: 768px) {
+  .skills-section {
+    padding: 1rem;
+
+    .skills-main {
+      flex-direction: column;
+    }
+
+    .skills-heading {
+      font-size: 2.5rem;
+      text-align: center;
+    }
+
+    .skills-subtitle {
+      text-align: center;
+    }
+
+    .skills-grid {
+      grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    }
+
+    .skills-visual {
+      order: -1;
+      margin-bottom: 1rem;
+    }
+  }
+}

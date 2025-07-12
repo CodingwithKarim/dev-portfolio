@@ -1,0 +1,161 @@
+@import "../../_globalColor";
+
+:root {
+  --yt-card-bg:    #f5f5f5;
+  --yt-text-main:  #222222;
+  --yt-text-sub:   #555555;
+  --yt-accent-1:   #e52d27;
+  --yt-accent-2:   #b31217;
+}
+
+// ——— Dark Theme Overrides ———
+[data-theme="dark"] {
+  --yt-card-bg:    #1e1e2f;
+  --yt-text-main:  #e6e68;
+  --yt-text-sub:   #aaaabb;
+  --yt-accent-1:   #e52d27;
+  --yt-accent-2:   #b31217;
+}
+
+.social-media-div {
+  font-size: 2em;
+  // text-align: center; // center on all screen sizes by default
+
+  /* —— Theme‐specific icon colors —— */
+  // &[data-theme="light"] {
+  //   .icon-button i {
+  //     color: $textColor;          // dark text on light pages
+  //   }
+  //   .icon-button i:hover {
+  //     background-color: $textColorDark; // white hover on light pages
+  //   }
+  // }
+
+  // &[data-theme="dark"] {
+  //   .icon-button i {
+  //     color: $textColorDark;     // white text on dark pages
+  //   }
+  //   .icon-button i:hover {
+  //     background-color: $textColor;      // dark hover on dark pages
+  //   }
+  // }
+
+  .fa-youtube{
+    background-color: var(--yt-card-bg);
+  }
+
+  .icon-button {
+    margin: 0 5px 10px;
+  }
+
+  .icon-button i {
+    border-radius: 2.6rem;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 1.3rem;
+    height: 2.6rem;
+    line-height: 2.6rem;
+    position: relative;
+    text-align: center;
+    user-select: none;
+    width: 2.6rem;
+    transition: 0.2s ease-in;
+  }
+
+  /* brand‐color backgrounds stay the same */
+  .facebook i { background-color: $faceBook; }
+  .linkedin i { background-color: $linkedin; }
+  .github i   { background-color: $github; }
+  .gitlab i   { background-color: $gitlab; }
+  .google i   { background-color: $google; }
+  .twitter i  { background-color: $twitter; }
+  .medium i   { background-color: $medium; }
+  .stack-overflow i { background-color: $stackoverflow; }
+  .kaggle i   { background-color: $kaggle; }
+  .instagram i { background-color: $instagram; }
+}
+
+.icon-button {
+  margin-bottom: 10px;
+}
+
+.icon-button i {
+  color: $textColorDark;
+  border-radius: 2.6rem;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 1.3rem;
+  height: 2.6rem;
+  line-height: 2.6rem;
+  margin: 0 5px;
+  position: relative;
+  text-align: center;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  width: 2.6rem;
+  margin-bottom: 10px;
+  transition: 0.2s ease-in;
+}
+
+.facebook i {
+  background-color: $faceBook;
+}
+
+.linkedin i {
+  background-color: $linkedin;
+}
+
+.github i {
+  background-color: $github;
+}
+
+.gitlab i {
+  background-color: $gitlab;
+}
+
+.google i {
+  background-color: $google;
+}
+
+.twitter i {
+  background-color: $twitter;
+}
+
+.medium i {
+  background-color: $medium;
+}
+
+.stack-overflow i {
+  background-color: $stackoverflow;
+}
+
+.kaggle i {
+  background-color: $kaggle;
+}
+
+.instagram i {
+  background-color: $instagram;
+}
+
+/* Hover Transition */
+.twitter i:hover,
+.google i:hover,
+.gitlab i:hover,
+.github i:hover,
+.linkedin i:hover,
+.facebook i:hover,
+.instagram i:hover,
+.stack-overflow i:hover,
+.kaggle i:hover,
+.medium i:hover {
+  background-color: $textColor;
+}
+
+/* Media Query */
+@media (max-width: 768px) {
+  .social-media-div {
+    text-align: center;
+  }
+}
