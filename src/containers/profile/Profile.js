@@ -13,10 +13,12 @@ export default function Profile() {
     setrepo(array);
   }
 
+  const profilePath = `${process.env.PUBLIC_URL}/profile.json`;
+
   useEffect(() => {
     if (openSource.showGithubProfile === "true") {
       const getProfileData = () => {
-        fetch("/profile.json")
+        fetch(profilePath)
           .then(result => {
             if (result.ok) {
               return result.json();

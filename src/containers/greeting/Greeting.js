@@ -41,20 +41,15 @@ export default function Greeting() {
               <div className="button-greeting-div">
                 <Button text="Contact me" href="#contact" />
                 {greeting.resumeLink && (
-                  // <a
-                  //   href={require("./resume.pdf")}
-                  //   download="Resume.pdf"
-                  //   className="download-link-button"
-                  // >
-                  //   <Button text="Download my resume" />
-                  // </a>
-                  <Button
-                    text="Download my resume"
-                    href="https://drive.google.com/file/d/1pp8DG3ndfl_IADugf0TrUQcxEJzJX2VZ/view?usp=sharing"
+                  <a
+                    href="/resume.pdf"
                     download="Resume.pdf"
                     className="download-link-button"
-                    newTab={true}
-                  />
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <Button text="Download my resume" />
+                  </a>
                 )}
               </div>
             </div>

@@ -42,6 +42,7 @@ export default function StartupProject() {
                       ? "dark-mode project-card project-card-dark"
                       : "project-card project-card-light"
                   }
+                  onClick={() => openUrlInNewTab(project.footerLink[0].url)}
                 >
                   {project.image ? (
                     <div className="project-image">

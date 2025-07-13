@@ -1,7 +1,9 @@
-.experience-cards-div {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
-  gap: 1rem 1rem;
+/* src/containers/workExperience/WorkExperience.scss */
+
+.experience-section {
+  padding: 2rem 1rem 0;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 .experience-heading {
@@ -9,31 +11,49 @@
   font-weight: 400;
   text-align: center;
   margin-bottom: 3rem;
+  color: var(--text-color);
 }
 
-.experience-container {
-  display: flex;
-  width: 90%;
-  padding: 20px 10px;
-  margin: 0px auto;
-  margin-top: 2rem;
+.experience-cards-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
+  gap: 1.5rem;
 }
 
-.experience-container > * {
-  flex: 1;
+.experience-text-desc {
+  text-align: center;
+  margin-bottom: 2rem;   /* separate from bullets */
+  // color: $textColor;
+  font-size: 1.1rem;
+  line-height: 1.6;
 }
 
-/* Media Query */
+.experience-text-role {
+  font-size: 1.5rem;
+  margin: 0;
+  // padding-top: 1.5rem;
+}
 
-@media (max-width: 1380px) {
+.experience-text-date {
+  font-size: 1.125rem;
+  margin: 0.25rem 0 1rem;
+}
+
+/* Responsive adjustments */
+@media (max-width: 1024px) {
   .experience-heading {
-    font-size: 40px;
+    font-size: 2.5rem;
   }
 }
 
 @media (max-width: 768px) {
   .experience-heading {
-    font-size: 30px;
-    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 2rem;
+  }
+  
+  .experience-cards-grid {
+    grid-template-columns: 1fr;
+    gap: 1rem;
   }
 }

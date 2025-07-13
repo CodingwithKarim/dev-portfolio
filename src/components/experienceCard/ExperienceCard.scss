@@ -6,6 +6,9 @@
   box-shadow: $lightBoxShadowDark 0px 10px 30px -15px;
   border-radius: 10px;
   border: 1px solid $lightBorder1;
+  border-image: 
+    linear-gradient(135deg, var(--accent-color), rgba(var(--accent-color-rgb), 0.5)) 
+    1;
 }
 
 .experience-card-dark {
@@ -17,7 +20,9 @@
 }
 
 .experience-card:hover {
-  box-shadow: $lightBoxShadowDark 0px 20px 30px -10px;
+  box-shadow: 0 8px 24px rgba(var(--accent-color-rgb), 0.4),
+              0 12px 48px rgba(0,0,0,0.2);
+  transform: translateY(-4px);
 }
 
 .experience-banner {
@@ -35,6 +40,14 @@
   display: flex;
   align-items: flex-end;
   justify-content: center;
+   background: 
+    linear-gradient(
+      to bottom,
+      rgba(var(--accent-color-rgb), 0.8),
+      rgba(var(--accent-color-rgb), 0.3) 60%,
+      transparent
+    ),
+    center/cover no-repeat url(/* your fallback or pattern */);
 }
 
 .experience-blurred_div {
@@ -96,7 +109,7 @@
   color: $textColor;
   font-weight: 700;
   font-size: 25px;
-  margin: 0px;
+  margin-bottom: 0.75rem;
   padding-top: 1.5rem;
   line-height: normal;
 }
@@ -107,18 +120,44 @@
   text-align: center;
   color: $textColor;
   font-size: 20px;
-  margin: 0px;
+  margin-bottom: 1.5rem;
   padding-top: 1rem;
   font-weight: 600;
 }
 
 .experience-text-desc {
-  text-align: center;
+  margin-bottom: 2rem;
+  font-size: 1rem;
+  line-height: 1.6;
 }
 
 .experience-text-details {
-  padding: 1.5rem;
-  margin-top: 2rem;
+  padding: 2rem;
+  margin-top: 2.5rem;
+}
+
+.experience-bullets {
+ margin: 0;
+  padding: 0;
+  list-style: none;
+   font-size: 1.2rem;
+
+  li {
+    position: relative;
+    padding-left: 1.6rem;
+    margin-bottom: 1.5rem;
+    line-height: 1.4;
+
+    &::before {
+      content: '›';           /* or '\f105' if you’re pulling from Font-Awesome */
+    position: absolute;
+    left: 0;
+    top: 0;
+    font-size: 1rem;
+    line-height: 1.4;
+    color: var(--accent-color);
+    }
+  }
 }
 
 /* Media Query */

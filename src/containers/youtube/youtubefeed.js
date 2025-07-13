@@ -8,8 +8,8 @@ const YouTubeFeed = () => {
   const [nextPageToken, setNextPageToken] = useState("");
   const [loading, setLoading] = useState(true);
 
-  const apiKey    = "AIzaSyDb-RWoDbmgzJ0vG7W6eH3fQsQceq4Ovnk";
-  const channelId = "UCXECChVuIufTMFnZtSRdm6A";
+  const apiKey = process.env.REACT_APP_YOUTUBE_API_KEY;
+  const channelId = process.env.REACT_APP_YOUTUBE_CHANNEL_ID;
   const pageSize  = 6;
 
   // *** Toggle this to true to use mock data instead of calling YouTube ***

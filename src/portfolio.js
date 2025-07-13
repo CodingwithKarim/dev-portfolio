@@ -49,14 +49,14 @@ const skillsSection = {
   subTitle:
     "Software Engineer passionate about building secure, impactful software and continuously learning to improve.",
 
- skills: [
-  emoji("💻 Developed secure, scalable full-stack applications using Go, C#/.NET, Node.js, and modern frontend frameworks."),
-  emoji("🔐 Engineered privacy-first systems with end-to-end encryption, zero-knowledge architecture, and robust authentication."),
-  emoji("📡 Designed and deployed RESTful APIs, real-time WebSocket services, and microservices powering internal tools and web apps."),
-  emoji("🛠️ Managed infrastructure with Docker, NGINX, and Linux; deployed to cloud platforms including AWS EC2 and RDS."),
-  emoji("🧠 Integrated custom LLMs and third-party APIs (OpenAI, Claude, Gemini, Groq) through a unified agent framework."),
-  emoji("📈 Modernized legacy systems and improved performance and reliability across complex, high-traffic fintech environments.")
-],
+  skills: [
+    emoji("💻 Built secure, scalable full-stack apps using Go, C#/.NET, Node.js, and modern frontend frameworks."),
+    emoji("🔐 Designed privacy-first systems with end-to-end encryption, zero-knowledge models, and robust auth flows."),
+    emoji("📡 Developed RESTful APIs, WebSocket services, and microservices supporting real-time tools and platforms."),
+    emoji("🛠️ Managed infrastructure using Docker, NGINX, and Linux; deployed to AWS EC2, RDS, and cloud-native environments."),
+    emoji("🧠 Integrated custom and third-party LLMs (OpenAI, Claude, Gemini, Groq) via a unified agent-driven framework."),
+    emoji("📈 Refactored and modernized legacy systems to boost performance, reliability, and scalability in fintech stacks.")
+  ],
 
   softwareSkills: [
     {
@@ -180,7 +180,7 @@ const workExperiences = {
       company: "Resilient Coders",
       companylogo: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ_JdRSTeGKPnFsl-6isxPxIDzwUeoaJh32bQ&s",
       date: "Aug 2021 – Feb 2022",
-      desc: "Completed an intensive full-time training program focused on full-stack web development, collaboration, and client-based project delivery.",
+      desc: " Completed an intensive full-stack training program covering HTML, CSS, JavaScript, and modern frameworks, including responsive design and accessibility. Collaborated in agile teams on code reviews, pair programming, and client project delivery.",
       descBullets: [
         "Built dynamic web applications using HTML, CSS, JavaScript, and modern libraries.",
         "Developed full-stack apps for internal projects and an external daycare client, delivering a complete web platform.",
@@ -209,13 +209,24 @@ const openSource = {
 // Some big projects you have worked on
 
 const bigProjects = {
-  title: "Projects",
+  title: "Featured Projects",
   subtitle: "",
   projects: [
     {
+      image: "https://github.com/user-attachments/assets/2720491b-88e7-4896-8ce7-354d7a2dca01",
+      projectName: "FreeAI",
+      projectDesc: "FreeAI is a powerful and user friendly AI control center for running AI models entirely on your own computer hardware. No subscriptions. No API keys. No internet required.",
+      footerLink: [
+        {
+          name: "GitHub",
+          url: "https://github.com/codingwithkarim/freeai"
+        }
+      ]
+    },
+    {
       image: "https://github.com/user-attachments/assets/a8276a67-9638-4d6d-b5ba-240f75dd9503",
       projectName: "Posto",
-      projectDesc: "A privacy-first blogging platform with zero-knowledge encryption, built with Go, MySQL, and NGINX. Supports public and private posts, likes, comments, and follower feeds.",
+      projectDesc: "A privacy-first blogging platform that puts you in control. Private posts stay secure with end-to-end encryption, while public posts and social features help you grow a trusted community.",
       footerLink: [
         {
           name: "Live Site",
@@ -228,20 +239,20 @@ const bigProjects = {
       ]
     },
     {
-      image: "https://github.com/user-attachments/assets/2720491b-88e7-4896-8ce7-354d7a2dca01",
-      projectName: "FreeAI",
-      projectDesc: "A local-first AI control center that lets you run, manage, and compare LLMs without internet or accounts. Supports OpenAI, local models, and custom chat templates.",
+      image: require("./assets/images/hson-server.png"),
+      projectName: "HSON Server",
+      projectDesc: "A drop-in JSON Server replacement for mocking structured data. Supports plain text formats with deep nesting, filtering, pagination, and automatic live reload.",
       footerLink: [
         {
           name: "GitHub",
-          url: "https://github.com/codingwithkarim/freeai"
+          url: "https://github.com/codingwithkarim/hson-server"
         }
       ]
     },
     {
       image: "https://github.com/user-attachments/assets/8e4a23ae-e07e-46f7-bd49-bf7448123738",
       projectName: "AgentK",
-      projectDesc: "A multi-model chat client with session management, model selection, and shared context features. Built with React and Go, designed for real-time LLM interaction.",
+      projectDesc: "A WrapGPT-powered chat client that unifies access to 7+ AI providers in one interface. Supports session management, model switching, and shared context across conversations.",
       footerLink: [
         {
           name: "GitHub",
@@ -249,17 +260,6 @@ const bigProjects = {
         }
       ]
     },
-    {
-      image: require("./assets/images/hson-server.png"),
-      projectName: "HSON Server",
-      projectDesc: "A drop-in JSON Server replacement that supports HJSON and plain-text data mocking. Features deep nesting, filtering, pagination, and live reload via Go.",
-      footerLink: [
-        {
-          name: "GitHub",
-          url: "https://github.com/codingwithkarim/hson-server"
-        }
-      ]
-    }
   ],
   display: true // Set false to hide this section, defaults to true
 };
