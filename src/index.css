@@ -1,4 +1,4 @@
-@font-face {
+/* @font-face {
   font-family: "Agustina Regular";
   font-style: normal;
   font-weight: normal;
@@ -11,7 +11,7 @@
   src: local("Montserrat"),
     url("./assets/fonts/Montserrat-Regular.ttf") format("woff");
   font-display: swap;
-}
+} */
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;

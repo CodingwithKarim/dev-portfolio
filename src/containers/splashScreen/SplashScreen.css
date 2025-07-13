@@ -15,8 +15,10 @@
   text-decoration: none;
 }
 .splash-title {
-  font-family: "Agustina Regular", cursive;
-  font-weight: bold;
+  font-family: "Cedarville Cursive", cursive;
+  font-weight: 400;
+  font-style: normal;
+  color: #8E24AA;
   font-variant-ligatures: no-common-ligatures;
   -webkit-font-variant-ligatures: no-common-ligatures;
   padding: 0 20px;
