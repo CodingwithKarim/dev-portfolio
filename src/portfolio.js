@@ -21,8 +21,8 @@ const greeting = {
   subTitle: emoji(
     "I’m a software engineer with a deep passion for technology and a constant drive to learn and grow. I love building thoughtful, reliable tools that solve real problems. Whether it's a full-stack platform or a developer tool, I treat every project as a chance to create meaningful software."
   ),
-  resumeLink:
-    "https://drive.google.com/file/d/1ofFdKF_mqscH8WvXkSObnVvC9kK7Ldlu/view?usp=sharing", // Set to empty to hide the button
+  // resumeLink:
+  //   "https://drive.google.com/file/d/1ofFdKF_mqscH8WvXkSObnVvC9kK7Ldlu/view?usp=sharing", // Set to empty to hide the button
   displayGreeting: true // Set false to hide this section, defaults to true
 };
 
